@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 
 import SignupPage from './pages/SignupPage';
 import LoginPage from './pages/LoginPage';
+import IsPrivate from './components/IsPrivate';
 // import IsAnon from './components/IsAnon';
 // import IsPrivate from './components/IsPrivate';
 
@@ -15,7 +16,7 @@ function App() {
       <Navbar/>
 
       <Routes>
-      <Route path="/" element={<HomePage/>} />
+      <Route path="/" element={<IsPrivate><HomePage/></IsPrivate>} />
 
       <Route path="/signup" element={ <SignupPage /> } />
       <Route path="/login" element={ <LoginPage /> } />
