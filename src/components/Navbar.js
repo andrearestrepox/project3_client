@@ -10,6 +10,17 @@ function Navbar() {
         <Link to="/">
             <button>Home</button>
         </Link>
+
+
+
+        {isLoggedIn && (
+            <>
+            <Link to="/profile">
+            <button>My Profile</button>
+            </Link>
+            </>
+        )}
+     
         
         {isLoggedIn && (
             <>
