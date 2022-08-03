@@ -35,4 +35,13 @@
   to {
     transform: rotate(360deg);
   }
+} 
+
+.MomName {
+  color: red;
+
+}
+
+.MomBio {
+  color:blue;
 }

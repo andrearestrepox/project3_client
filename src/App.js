@@ -5,28 +5,46 @@ import { Routes, Route } from "react-router-dom";
 import SignupPage from './pages/SignupPage';
 import LoginPage from './pages/LoginPage';
 import Navbar from './components/Navbar';
-import IsPrivate from './components/IsPrivate';
-import ProfilePage from './pages/ProfilePage';
-import IsPrivateAndNoProfile from './components/IsPrivateAndNoProfile'
-
+import IsPrivateAndNoProfile from './components/IsPrivateAndNoProfile';
+import CreateProfilePage from './pages/CreateProfilePage';
+import MomsPage from './pages/MomsPage';
+import IsPrivateAndHasProfile from './components/IsPrivateAndHasProfile';
+import EditProfilePage from './pages/EditProfilePage'
+import ProfileDetailsPage from './pages/ProfileDetailsPage'
 
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
 
       <Routes>
-      <Route path="/" element={<IsPrivateAndNoProfile><HomePage/></IsPrivateAndNoProfile>} />
+        <Route path="/" element={<HomePage />} />
 
-      <Route
-      path="/profile"
-      element={ <IsPrivate><ProfilePage /></IsPrivate> }
-      />
+        <Route
+          path="/create-profile"
+          element={<IsPrivateAndNoProfile><CreateProfilePage /></IsPrivateAndNoProfile>}
+        />
 
-      <Route path="/signup" element={ <SignupPage /> } />
-      <Route path="/login" element={ <LoginPage /> } />
+        <Route
+          path="/users"
+          element={<IsPrivateAndHasProfile><MomsPage /></IsPrivateAndHasProfile>}
+        />
+
+        <Route
+          path="/myprofile"
+          element={<IsPrivateAndHasProfile><EditProfilePage /></IsPrivateAndHasProfile>}
+        />
+        
+        <Route 
+        path="/individual-Profile"
+        element={ <IsPrivateAndHasProfile><ProfileDetailsPage /></IsPrivateAndHasProfile>}
+        />
+
+
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/login" element={<LoginPage />} />
 
 
 

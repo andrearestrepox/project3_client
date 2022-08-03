@@ -18,12 +18,13 @@ function SignupPage(props) {
     const handleName = (event) => setName(event.target.value);
 
     const handleSignupSubmit = (event) => {
-        event.preventdefault();
+        event.preventDefault();
 
         const requestBody = { email, password, name };
 
         axios.post(`${API_URL}/auth/signup`, requestBody)
         .then((response) => {
+            console.log(response)
             navigate("/login");
         })
         .catch((error) => {
