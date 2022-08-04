@@ -151,7 +151,12 @@ function CreateProfilePage(props) {
 
     return (
         <div className="UserProfile">
-            <h1>Create Profile</h1>
+            
+            <div className="CreateDiv">
+            <h1 className="H1Create">Create Profile</h1>
+            </div>
+            
+            
 
             <form onSubmit={handleUserProfileSubmit}>
 
@@ -164,7 +169,7 @@ function CreateProfilePage(props) {
                 <div><input type="number" /></div>
 
                 <label>My Bio</label>
-                <div><textarea value={bio} onChange={handleBio} /></div>
+                <div><textarea className="TextArea" value={bio} onChange={handleBio} /></div>
 
                 <h2><label>My Work</label></h2>
 
@@ -192,7 +197,7 @@ function CreateProfilePage(props) {
                 </select>
 
 
-                <div><textarea value={answerOne} onChange={handleAnswerOne} /></div>
+                <div><textarea className="TextArea" value={answerOne} onChange={handleAnswerOne} /></div>
 
 
                 <p>Prompt Two</p>
@@ -206,7 +211,7 @@ function CreateProfilePage(props) {
 
 
 
-                <div><textarea value={answerTwo} onChange={handleAnswerTwo} /></div>
+                <div><textarea className="TextArea" value={answerTwo} onChange={handleAnswerTwo} /></div>
 
 
                 <p>Prompt Three</p>
@@ -217,7 +222,7 @@ function CreateProfilePage(props) {
                 </select>
 
 
-                <div><textarea value={answerThree} onChange={handleAnswerThree} /></div>
+                <div><textarea className="TextArea" value={answerThree} onChange={handleAnswerThree} /></div>
 
                 <p>Prompt Four</p>
                 <select onChange={handleQuestionFour} value={questionFour}>
@@ -229,7 +234,7 @@ function CreateProfilePage(props) {
 
 
 
-                <div><textarea value={answerFour} onChange={handleAnswerFour} /></div>
+                <div><textarea className="TextArea" value={answerFour} onChange={handleAnswerFour} /></div>
 
                 <p>Prompt Five</p>
 
@@ -241,9 +246,9 @@ function CreateProfilePage(props) {
 
 
 
-                <div><textarea value={answerFive} onChange={handleAnswerFive} /></div>
+                <div><textarea className="TextArea" value={answerFive} onChange={handleAnswerFive} /></div>
 
-                <button type="submit">Submit</button>
+                <button type="submit" className="CreateButton">Submit</button>
 
             </form>
         </div>

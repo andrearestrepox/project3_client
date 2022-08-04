@@ -7,6 +7,7 @@ const API_URL = "http://localhost:5005";
 
 const AuthContext = React.createContext();
 
+
 function AuthProviderWrapper(props) {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
@@ -16,6 +17,9 @@ function AuthProviderWrapper(props) {
 
     const storeToken = (token) => {
         localStorage.setItem("authToken", token);
+    }
+    const deleteToken = (token) => {
+        localStorage.removeItem("authToken", token)
     }
 
     const authenticateUser = () => {
@@ -62,7 +66,7 @@ function AuthProviderWrapper(props) {
 
     return(
         <AuthContext.Provider 
-        value={{ isLoggedIn, isLoading, user, storeToken, authenticateUser, logOutUser, storedToken}}>
+        value={{ isLoggedIn, isLoading, user, storeToken, removeToken, authenticateUser, logOutUser, storedToken}}>
             {props.children}
         </AuthContext.Provider>
     )

@@ -33,14 +33,16 @@ function App() {
         />
 
         <Route
-          path="/myprofile"
+          path="/edit-profile"
           element={<IsPrivateAndHasProfile><EditProfilePage /></IsPrivateAndHasProfile>}
         />
         
         <Route 
-        path="/individual-Profile"
+        path="/individual-profile/:profileId"
         element={ <IsPrivateAndHasProfile><ProfileDetailsPage /></IsPrivateAndHasProfile>}
         />
+
+      
 
 
         <Route path="/signup" element={<SignupPage />} />

@@ -2,6 +2,7 @@ import axios from "axios";
 import { AuthContext } from "../context/auth.context";
 import { useEffect, useState, useContext } from "react";
 import { Link} from "react-router-dom";
+import jengarner from '../components/jengarner.webp'
 
 
 const API_URL = "http://localhost:5005"
@@ -26,18 +27,21 @@ useEffect(() => {
 }, [])
     return(
         <div className="MomsPage"> 
-        <h1>Moms Page</h1>
+        <h1 className="H1Mom">Moms Page</h1>
          {moms && moms.map(( moms, index) => {
             console.log(moms)
+            console.log(moms.profileId.userId)
             return (
                 <div className="MomProfileCard">
 
-               <p className="MomName">{moms.name}</p>
-               <p className="MomBio">{moms.profileId.bio}</p>
+                <img className="JenPic"src={jengarner}/>
+               <h1 className="MomName">{moms.name}</h1>
+               {moms.profileId &&<p className="MomBio">{moms.profileId.bio}</p>}
+              
 
-               <Link to="/individual-profile">
-               <a>See More</a>
-               </Link>
+               {moms.profileId && <Link to={`/individual-profile/${moms.profileId._id }`}  moms={moms} className="LinkMomPage">
+               See More
+               </Link>}
 
               
                </div>

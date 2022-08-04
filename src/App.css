@@ -1,5 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap");
+
 .App {
   text-align: center;
+  font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+
 }
 
 .App-logo {
@@ -18,8 +24,8 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items:flex-start; */
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -32,16 +38,199 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
-} 
+}
 
-.MomName {
-  color: red;
+.MomProfileCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+.JenPic {
+  padding-top: 15px;
+  width: 100px;
+}
 
+.NavBar {
+  background-color: #E3B7A0;
+  padding: 20px;
+}
+
+.LinkMomPage {
+  color: #BF9270;
+  border: none;
+  outline: 0;
+  display: block;
+  padding: 8px;
+  color: white;
+  background-color: #BF9270;
+  text-align: center;
+  cursor: pointer;
+  width: 95%;
+  font-size: 18px;
 }
 
 .MomBio {
-  color:blue;
+  color: black;
+  font-size: 18px;
 }
+
+.HomeImg1 {
+  height: 200px;
+  width: 300px;
+   margin-top: 30px;
+}
+.column {
+  float: right;
+  width: 30%;
+  padding: 5px;
+ }
+ .DivBlock {
+  margin: 30px;
+  margin-left: 290px;
+  width: 35%;
+  height: 300px;
+  background-color:#BF9270;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  padding-left: 450px;
+ }
+ .app-name {
+  float: left;
+  color:black;
+  text-decoration: none;
+ }
+ .NavButton {
+  background-color:#E3B7A0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+ }
+ .CreateButton {
+  background-color:#E3B7A0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+ }
+
+.TextArea {
+  width: 400px;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 16px;
+  resize: none;
+}
+.CreateDiv{
+  margin: 30px;
+  margin-left: 290px;
+  width: 35%;
+  height: 250px;
+  background-color:#BF9270;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  padding-left: 450px;
+}
+.UpdateButton{
+  background-color:#E3B7A0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+}
+.DeleteButton{
+  background-color:red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.LogButton {
+  background-color:#E3B7A0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+}
+.SignButton {
+  background-color:#E3B7A0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+}
+.SignInput {
+  width: 300px;
+  height: 50px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 16px;
+  resize: none;
+}
+
+.LogInput {
+  width: 300px;
+  height: 50px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 16px;
+  resize: none;
+}
+
+.LogBtn {
+ background-color:#BF9270 ;
+ color: white
+}
+
+
+
+ 
+
