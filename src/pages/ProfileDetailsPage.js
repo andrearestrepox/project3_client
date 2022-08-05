@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import MomsPage from "./MomsPage";
+import jenimg from '../components/jengarner.webp'
 
 
 const API_URL = "http://localhost:5005"
@@ -29,22 +31,24 @@ function ProfileDetailsPage(props) {
 
     return (
 
-        <div>
-            <div>Hi this is the profile details page</div>
+        <div className="ProfDiv">
+            <div><h1>User Profile Details</h1></div>
 
             {mom && (
                 <>
-                    <p>{mom.bio}</p>
-                    <p>Question 1: {mom.answerOne.questionId.question}</p>
+                <img  className="DetailsImg" src={jenimg} alt= "america's favorite mom" />
+                <h2>Bio:</h2>
+                    <p className="PTag">{mom.bio}</p>
+                    <p  className="PTag"><h2>Question 1:</h2> <h3>{mom.answerOne.questionId.question}</h3></p>
                     <p>{mom.answerOne.userAnswer}</p>
-                    <p>Question 2: {mom.answerTwo.questionId.question}</p>
-                    <p>{mom.answerTwo.userAnswer}</p>
-                    <p>Question 3: {mom.answerThree.questionId.question}</p>
-                    <p>{mom.answerThree.userAnswer}</p>
-                    <p>Question 4: {mom.answerFour.questionId.question}</p>
-                    <p>{mom.answerFour.userAnswer}</p>
-                    <p>Question 5: {mom.answerFive.questionId.question}</p>
-                    <p>{mom.answerFive.userAnswer}</p>
+                    <p  className="PTag"><h2>Question 2:</h2> <h3>{mom.answerTwo.questionId.question}</h3></p>
+                    <p  className="PTag">{mom.answerTwo.userAnswer}</p>
+                    <p  className="PTag"><h2>Question 3:</h2> <h3>{mom.answerThree.questionId.question}</h3></p>
+                    <p  className="PTag">{mom.answerThree.userAnswer}</p>
+                    <p  className="PTag"><h2>Question 4:</h2><h3>{mom.answerFour.questionId.question}</h3></p>
+                    <p  className="PTag">{mom.answerFour.userAnswer}</p>
+                    <p  className="PTag"><h2>Question 5:</h2><h3>{mom.answerFive.questionId.question}</h3></p>
+                    <p  className="PTag">{mom.answerFive.userAnswer}</p>
 
                 </>
             )}
