@@ -4,6 +4,7 @@
   text-align: center;
   font-family: 'Cormorant', serif;
   font-family: 'Cormorant Garamond', serif;
+  
 }
 
 
@@ -37,6 +38,39 @@
     transform: rotate(360deg);
   }
 }
+.opentxt {
+position: relative;
+top: 200px;
+margin-left: 50px;
+}
+.opentitle {
+  position:absolute;
+  font-size: 78px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: .80;
+  text-align: left;
+}
+.openpar {
+position: relative;
+float: left;
+top: 200px;
+line-height: .90;
+font-size: 20px;
+margin-top: -5px;
+font-weight: 570;
+text-align: left;
+
+}
+
+.openimg {
+  align-items: center;
+  height: 600px;
+}
+.signbtn {
+  position: absolute;
+  float: left;
+}
 
 .MomProfileCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -44,6 +78,7 @@
   margin: auto;
   text-align: center;
 }
+
 .JenPic {
   padding-top: 15px;
   width: 100px;
@@ -243,6 +278,12 @@ padding-top: 50px;
   height: 200px;
   padding-top: 15px;
 }
+
+.hometxt {
+  display: flex;
+  justify-content: center;
+}
+
 
 
 
