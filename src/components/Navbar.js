@@ -14,21 +14,15 @@ function Navbar() {
 
 
 
-        <Link to="/">
-            <button className="NavButton">Home</button>
-        </Link>
+        <Link to="/" className="NavButton">Home</Link>
 
-        <Link to='/users'>
-            <button className="NavButton">Meet Moms</button>
-        </Link>
+        <Link to='/users' className="NavButton">Meet Moms</Link>
 
 
 
         {isLoggedIn && (
             <>
-            <Link to="/edit-profile">
-            <button className="NavButton">Edit Profile</button>
-            </Link>
+            <Link to="/edit-profile" className="NavButton">Edit Profile</Link>
             </>
         )}
      
@@ -42,8 +36,8 @@ function Navbar() {
 
         {!isLoggedIn && (
             <>
-            <Link to="/signup"> <button className="NavButton">Sign up</button></Link>
-            <Link to="/login"> <button className="NavButton">Login</button></Link>
+            <Link to="/signup" className="NavButton">Sign up</Link>
+            <Link to="/login" className="NavButton"> Login </Link>
             </>
         )}
 

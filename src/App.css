@@ -14,6 +14,40 @@
   }
 }
 
+@media only screen and (max-width: 667px) {
+  
+  .opentitle {
+    font-size: 40px !important;
+    width: 100% !important;
+    left: -20px;
+    bottom: 30px;
+  }
+  .openpar{
+    font-size: 18px !important;
+    width: 100% !important;
+    line-height: 19px !important;
+    right: 20px;
+    top: 350px !important;
+    padding-top: 0;
+  }
+  .signbtn{
+    position: absolute;
+    bottom: -200px !important;
+  }
+  .openimg{
+    /* width: 100%;
+    position: absolute; */
+   left: 0px;
+    top: 200px;
+  }
+  .NavBar {
+    width: 100%;
+    }
+    .NavButton{
+      float: left;
+    }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -69,7 +103,15 @@ text-align: left;
 }
 .signbtn {
   position: absolute;
-  float: left;
+  background-color:#E3B7A0;
+  color: white;
+  padding: 10px 40px;
+  position: absolute;
+  bottom: 200px;
+  left: 60px;
+  font-size: 35px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .MomProfileCard {
@@ -172,13 +214,13 @@ text-align: left;
 .CreateDiv{
   margin: 30px;
   margin-left: 290px;
-  width: 35%;
+  width: 20%;
   height: 250px;
   background-color:#BF9270;
   display:flex;
   justify-content:space-between;
   align-items: center;
-  padding-left: 450px;
+  /* padding-left: 450px; */
 }
 .UpdateButton{
   background-color:#E3B7A0;
@@ -230,6 +272,7 @@ text-align: left;
   display: inline-block;
   font-size: 16px;
   text-decoration: none;
+  cursor: pointer;
 }
 .SignInput {
   width: 300px;
