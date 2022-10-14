@@ -9,7 +9,7 @@ function Navbar() {
         <nav className="NavBar">
 
         <a href="/" className="app-name">
-       <h1>MomMeetUp</h1> 
+       <h1>Mom Meet Up</h1> 
          </a>
 
 

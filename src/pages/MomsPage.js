@@ -3,7 +3,7 @@ import { AuthContext } from "../context/auth.context";
 import { useEffect, useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { container } from "react-bootstrap"
-import jengarner from '../components/jengarner.webp'
+import jengarner from '../assets/img/jengarner.webp'
 
 
 const API_URL = process.env.REACT_APP_API_URL;

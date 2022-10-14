@@ -158,18 +158,16 @@ function CreateProfilePage(props) {
             
             
 
-            <form onSubmit={handleUserProfileSubmit}>
+            <form onSubmit={handleUserProfileSubmit} className="create-form">
 
                 {/* Add images using cloudinary */}
 
                 <div className="ProfilePicture"><h2><label>My Photos</label></h2></div>
-                <div><input type="file" name="user-profile-image" /></div>
+                <div><input type="file" name="user-profile-image" className="choose-file" /></div>
 
                 <label>Age</label>
                 <div><input type="number" /></div>
 
-                <label>My Bio</label>
-                <div><textarea className="TextArea" value={bio} onChange={handleBio} /></div>
 
                 <h2><label>My Work</label></h2>
 
@@ -181,6 +179,9 @@ function CreateProfilePage(props) {
                 <label> Company
                     <div></div> <input />
                 </label>
+
+                <label className="bio">My Bio</label>
+                <div><textarea className="TextArea" value={bio} onChange={handleBio} /></div>
 
 
                 <h2><label>Profile Prompts</label></h2>

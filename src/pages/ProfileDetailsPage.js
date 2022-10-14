@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import MomsPage from "./MomsPage";
-import jenimg from '../components/jengarner.webp'
+import jenimg from '../assets/img/jengarner.webp'
 
 
 const API_URL = process.env.REACT_APP_API_URL;
