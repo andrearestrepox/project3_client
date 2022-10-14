@@ -272,7 +272,7 @@ function EditProfilePage(props) {
 
 
             </form>
-                    <button className="DeleteButton" onClick={handleDelete}>DELETE</button>
+                    <button className="DeleteButton" onClick={handleDelete}>DELETE PROFILE</button>
             {errorMessage && <p className="error-message">{errorMessage}</p>}
         </div>
     )

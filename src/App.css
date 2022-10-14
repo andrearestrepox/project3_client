@@ -53,8 +53,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* align-items:flex-start; */
-  /* justify-content: center; */
+
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -114,47 +113,91 @@ text-align: left;
   cursor: pointer;
 }
 
+
+
+.H1Mom {
+  background-color:#E3B7A0;
+  color: white;
+  padding: 10px 40px;
+  position: absolute;
+  top: 95px;
+  left: 650px;
+}
+
+
+
 .MomProfileCard {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
+text-align: center;
+max-width: 300px;
+width: 100%;
+box-shadow: 0 0 10px white;
+padding: 20px;
+margin-top: 150px;
+
 }
 
-.JenPic {
-  padding-top: 15px;
-  width: 100px;
+.MomProfileCard:hover{
+  background-color: white;
+  opacity: 60%;
+
 }
 
-.NavBar {
-  background-color: #E3B7A0;
-  padding: 20px;
+.MomsPage{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  flex-direction: row;
+  margin-left: 65px;
+ margin-bottom: 150px;
+ 
 }
+
+
+.prof-pic {
+width: 150px;
+height: 150px;
+object-fit: cover;
+border-radius: 50%;
+margin: 0 auto 20px auto;
+display: block;
+
+}
+.MomBio {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 14.4px;
+}
+
+.MomName{
+  font-size: 19.2px;
+  font-weight: bold;
+}
+
+
 
 .LinkMomPage {
   color: #BF9270;
-  border: none;
-  outline: 0;
-  display: block;
+  /* display: block; */
   padding: 8px;
   color: white;
   background-color: #BF9270;
   text-align: center;
   cursor: pointer;
-  width: 95%;
+  width: 40%;
   font-size: 18px;
 }
 
-.MomBio {
-  color: black;
-  font-size: 18px;
-}
 
- .HomeImg1 {
+.HomeImg1 {
   height: 300px;
   width: 450px;
   
 } 
+.NavBar {
+  background-color: #E3B7A0;
+  padding: 20px;
+}
 .column {
   float:right;
   margin-right: 30px;
@@ -234,7 +277,7 @@ text-align: left;
   text-decoration: none;
 }
 .DeleteButton{
-  background-color:red;
+  background-color:darkred;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -243,7 +286,7 @@ text-align: left;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 10px;
   text-decoration: none;
 }
 

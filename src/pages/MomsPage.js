@@ -1,7 +1,8 @@
 import axios from "axios";
 import { AuthContext } from "../context/auth.context";
 import { useEffect, useState, useContext } from "react";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import { container } from "react-bootstrap"
 import jengarner from '../components/jengarner.webp'
 
 
@@ -30,11 +31,13 @@ useEffect(() => {
         <h1 className="H1Mom">Moms Page</h1>
          {moms && moms.map(( moms, index) => {
             console.log(moms)
-            console.log(moms.profileId.userId)
+            console.log(moms.profileId)
             return (
+                <container>
                 <div className="MomProfileCard">
 
-                <img className="JenPic"src={jengarner}/>
+
+                <img className="prof-pic"src={jengarner}/>
                <h1 className="MomName">{moms.name}</h1>
                {moms.profileId &&<p className="MomBio">{moms.profileId.bio}</p>}
               
@@ -45,6 +48,8 @@ useEffect(() => {
 
               
                </div>
+
+                </container>
             )
          })} 
 
